@@ -5,7 +5,7 @@ pipeline
         stage('Build')
         {
             steps{
-                sh 'g++ new1.cpp'
+                sh 'g++ new.cpp'
                 echo 'Build stage successful'
             }
         }
@@ -15,11 +15,11 @@ pipeline
                 echo 'Test stage successful'
             }
         }
-        stage('Deploy'){
-            steps{
-                echo 'Deployment successful'
-             }
-        }
+//         stage('Deploy'){
+//             steps{
+//                 echo 'Deployment successful'
+//              }
+//         }
     }
     post{
         failure{
