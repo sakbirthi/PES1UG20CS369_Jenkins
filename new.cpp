@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 
-void main()
+int main()
 {
     cout<<"This is a C++ program"<<endl;
+    return 0;
 }
